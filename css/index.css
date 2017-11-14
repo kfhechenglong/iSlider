@@ -1,52 +1,56 @@
-ul, li, ol, dl, dd, dt {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+html,body{
+    height:100%;}
 body {
     background: #f3f3f5;
     color: #999da0;
-    letter-spacing: 2px;
+    letter-spacing: 0.04rem;
+    position: relative;
 }
 .m_title {
     text-align: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    border-bottom: 0.02rem solid #ccc;
+    padding-bottom: 0.1rem;
+    padding-top: 0.2rem;
+    color:#333;
 }
-.sys_name {
+.sys_name,.detection {
+    font-size: 0.4rem;
+    line-height:0.6rem;
 }
 .detection {
-    font-size: 2em;
 }
 #main {
-    margin: 10px;
+    margin: 0.2rem;
     background: #fff;
-    padding: 5px;
+    padding:0.1rem;
 }
 .personal {
-    font-size: 1.7em;
-    line-height: 2.5em;
-    border-bottom: dashed 1px #ccc;
-    padding-bottom: 10px;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+    border-bottom: dashed 0.02rem #ccc;
+    padding-bottom: 0.2rem;
+    color:#333;
 }
 /*个人信息区*/
 .personal li {
     float: left;
-    padding: 0 5px;
+    padding: 0 0.1rem;
 }
 li.portrait {
-    width: 70px;
-    height: 70px;
+    width: 1.4rem;
+    height: 1.4rem;
     background: #666;
     padding: 0;
+    border-radius: 50%;
 }
 /*头像*/
 li.portrait img {
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 li.p_name {
-    width: 130px;
+    width: 2.6rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -60,29 +64,63 @@ li.p_name {
 /*年龄*/
 
 .check_msg {
-    font-size: 20px;
-    line-height: 1.8em;
-    padding: 5px 0;
+    font-size: 0.32rem;
+    /*line-height: 1.8em;*/
+    padding: 0.1rem 0;
 }
-
 .check_msg input,
-.check_msg select {
-
+.check_msg p {
+    position: fixed;
+    right:0;
+    bottom:1rem;
 }
-
+#close-imgs,.check_msg p{
+    border:0.02rem solid #FFFF00;
+    background: #7d91ea;
+    color:#fff;
+    line-height:0.7rem;
+    border-radius: 3px;
+}
+#close-imgs{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 200;
+    width: 1.5rem;
+    font-size: 0.32rem;
+    text-align: center;
+}
 .f_left {
     float: left;
 }
-
 .f_right {
     float: right;
 }
 .clear {
     clear: both;
 }
-
 .red {
     color: red;
 }
 .jcrq:active{ background: #FFFF00;}
-.imglist li{ border: 2px  solid seagreen; margin: 5px 0;}
+#imgsList{
+    background:#000;
+}
+.warp-img{
+    display: none;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.imglist li a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+.imglist li img{
+    width:100%;
+}
+/*.imglist li{*/
+    /*border: 0.04rem  solid seagreen;*/
+    /*margin: 0.1rem 0;*/
+/*}*/
