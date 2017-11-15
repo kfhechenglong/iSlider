@@ -79,14 +79,13 @@ li.p_name {
     background: #7d91ea;
     color:#fff;
     line-height:0.7rem;
-    border-radius: 3px;
+    border-radius: 50%;
 }
 #close-imgs{
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 0.3rem;
+    left: 0.3rem;
     z-index: 200;
-    width: 1.5rem;
     font-size: 0.32rem;
     text-align: center;
 }
